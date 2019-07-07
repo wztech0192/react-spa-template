@@ -4,11 +4,7 @@ import { Route } from 'react-router-dom';
 
 class Container extends Component {
   render() {
-    return (
-      <div className="container">
-        <Route render={props => <RouterView location={props.location} />} />
-      </div>
-    );
+    return <Route render={props => <RouterView location={props.location} />} />;
   }
 }
 

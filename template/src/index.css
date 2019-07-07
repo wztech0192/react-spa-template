@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:#fafafa
 }
 
 code {
@@ -12,26 +13,36 @@ code {
     monospace;
 }
 
+
 .container{
-  padding: 10px
+  padding:10px;
+  width: calc(100% - 20px);
+  position:absolute;
+}
+
+.container > .max-width{
+  display: 'block';
+  max-width: 800px;
+  margin:0 auto;
 }
 
 .page-enter {
   opacity: 0;
   transform: translate(-2em, 0);
-    transition-duration: 200ms;
-  transition-property: height, opacity, transform;
+
 }
 
 .page-exit-active {
   opacity: 0;
   transform: translate(2em, 0);
-    transition-duration: 200ms;
+    transition-duration: 300ms;
   transition-property: height, opacity, transform;
     position: absolute;
 }
 
 .page-enter-active{
-  opacity: 0.8;
+  opacity: 1;
   transform: translate(0, 0);
+      transition-duration: 300ms;
+  transition-property: height, opacity, transform;
 }
