@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background:#fafafa
+   background-color: #fafafa;
+  overflow-x: hidden;
+}
+html, body, #root{
+  height:100%;
 }
 
 code {
@@ -13,36 +17,18 @@ code {
     monospace;
 }
 
-
-.container{
-  padding:10px;
-  width: calc(100% - 20px);
-  position:absolute;
-}
-
-.container > .max-width{
-  display: 'block';
-  max-width: 800px;
+.loading{
+  display:block;
   margin:0 auto;
 }
 
-.page-enter {
-  opacity: 0;
-  transform: translate(-2em, 0);
 
+.container{
+  width: calc(100% - 10px);
+  position:absolute;
 }
 
-.page-exit-active {
-  opacity: 0;
-  transform: translate(2em, 0);
-    transition-duration: 300ms;
-  transition-property: height, opacity, transform;
-    position: absolute;
-}
 
-.page-enter-active{
-  opacity: 1;
-  transform: translate(0, 0);
-      transition-duration: 300ms;
-  transition-property: height, opacity, transform;
+.main-container{
+  height:65vh;
 }
